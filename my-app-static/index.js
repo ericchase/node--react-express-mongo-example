@@ -2,7 +2,7 @@ function MyComponent(props) {
     const [array, setArray] = React.useState(null);
 
     React.useEffect(() => {
-        fetch('http://localhost:8080/api/home', { mode: 'cors' })
+        fetch('http://localhost:8080/mongoose', { mode: 'cors' })
             .then(res => res.json())
             .then(setArray);
     }, []);
